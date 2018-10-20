@@ -1,0 +1,52 @@
+{
+    "transactionRuleDetails" : [
+     	{
+		    "priority": "1",
+     	},
+     	{
+     		"media": "B2B",
+     		"flightType": "Domestic",
+     		"traveller" : "Adult",
+     		"priority" : "4",
+     		"transactionFee" : "39"
+     	},
+     	{
+     		"media": "B2B",
+     		"flightType": "Domestic",
+     		"traveller" : "Child",
+     		"priority" : "4",
+     		"transactionFee" : "39"
+     	},
+     	{
+     		"media": "B2B",
+     		"flightType": "Domestic",
+     		"traveller" : "Infant",
+     		"priority" : "4",
+     		"transactionFee" : "0"
+     	},
+     	{
+     		"media": "B2B",
+     		"flightType": "International",
+     		"traveller" : "Adult",
+     		"priority" : "4",
+     		"transactionFee" : "149"
+     	},
+     	{
+     		"media": "B2B",
+     		"flightType": "International",
+     		"traveller" : "Child",
+     		"priority" : "4",
+     		"transactionFee" : "149"
+     	},
+     	{
+     		"media": "B2B",
+     		"flightType": "International",
+     		"traveller" : "Infant",
+     		"priority" : "4",
+     		"transactionFee" : "0"
+     	},
+     	{
+     		"priority": "1"
+     	}
+    ]
+}

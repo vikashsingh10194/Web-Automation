@@ -1,0 +1,237 @@
+{
+   "pages":[
+      {
+         "name":"flightResultContainer",
+         "uiObjects":[
+         	{
+         		"name": "flightCount",
+         		"type": "text",
+         		"locatorType": "xpath",
+         		"locatorValue": "//div[@class='resCount']//span"
+         	},
+         	{
+         		"name": "resultDiv",
+         		"type": "div",
+         		"locatorType": "xpath",
+         		"locatorValue": "(//div[@class='result'])[count]"
+         	},
+            {
+            	"name":"flightOnwardDiv",
+               	"type":"div",
+               	"locatorType":"xpath",
+               	"locatorValue":"(((//img[@alt='flightName'])/ancestor::div[@class='result'])[flightNo])"
+            }, 
+            {
+            	"name": "flightReturnDiv",
+            	"type": "div",
+            	"locatorType": "xpath",
+            	"locatorValue": "((//img[@alt='onwardFlight'])/ancestor::div[@class='result']//div[contains(@class, 'onFlt')][2]//child::img[@alt='returnFlight']/ancestor::div[@class='result'])[divNo]"
+            },
+            {
+            	"name": "totalPrice",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//span[@class='price']"
+            },
+            {
+            	"name": "bookButton",
+            	"type": "button",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//button[@class='bookCTA']"
+            },
+            {
+            	"name": "flightDetailsContainer",
+            	"type": "button",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetTab')]"
+            },
+            {
+            	"name": "baggageDetailsTab",
+            	"type": "button",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//li[contains(@class, 'bagInfo')]"
+            },
+            {
+            	"name": "baggageFlightName",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'airlineName')]"
+            },
+            {
+            	"name": "baggageFlightNo",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[@class='airlineFltNo']"
+            },
+            {
+            	"name": "checkInBaggage",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[@class='bagCheckInInfo']"
+            },
+            {
+            	"name": "cabinBaggage",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[@class='bagCabinInfo']"
+            },
+            {
+            	"name": "flightDetailsTab",
+            	"type": "tab",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//li[contains(@class, 'flightDetails')]"
+            },
+            {
+            	"name": "flightName",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='name']"
+            },
+            {
+            	"name": "flightNo",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='fltNum']"
+            },
+            {
+            	"name": "flightDuration",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='segTime']"
+            },
+            {
+            	"name": "onwardFlightCount",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltSegment')]/following-sibling::div[@class='retFltTitle']/preceding::div[@class='fltSegment']"
+            },
+            {
+            	"name": "flightStops",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//span[@class='stops']"
+            },
+            {
+            	"name": "flightDepartAirportCode",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//span[@class='airport']"
+            },
+            {
+            	"name": "flightArrivalAirportCode",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='to']//span[@class='airport']"
+            },
+            {
+            	"name": "flightDepartAirportName",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//span[@class='city']"
+            },
+            {
+            	"name": "flightArrivalAirportName",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='to']//span[@class='city']"
+            },
+            {
+            	"name": "flightDepartCountry",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//li[contains(@class, 'country')]"
+            },
+            {
+            	"name": "flightArrivalCountry",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//li[contains(@class, 'country')]"
+            },
+            {
+            	"name": "flightDepartTerminal",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//li[contains(@class, 'terminal')]"
+            },
+            {
+            	"name": "flightDepartTime",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//li[@class='departTime']"
+            },
+            {
+            	"name": "flightDepartDate",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//li[@class='jDate']"
+            },
+            {
+            	"name": "flightArrivalTerminal",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='to']//li[contains(@class, 'terminal')]"
+            },
+            {
+            	"name": "flightArrivalTime",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='to']//li[@class='departTime']"
+            },
+            {
+            	"name": "flightArrivalDate",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='to']//li[@class='jDate']"
+            },
+            {
+            	"name": "fareRulesTab",
+            	"type": "tab",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//li[contains(@class, 'fare-rules')]"
+            },
+            {
+            	"name": "fareDetailsTab",
+            	"type": "tab",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//li[contains(@class, 'fareDetails')]"
+            },
+            {
+            	"name": "adultTotalFare",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[@class='adultFare']//div[@class='total']"
+            },
+            {
+            	"name": "childTotalFare",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[@class='childFare']//div[@class='total']"
+            },
+            {
+            	"name": "infantTotalFare",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[@class='infantFare']//div[@class='total']"
+            },
+            {
+               "name":"otherFareType",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='otherFares']/div[@class='type']"
+            },
+            {
+            	"name": "otherTotalFare",
+            	"type": "button",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[@class='otherFares']//div[@class='total']"
+            },
+            {
+            	"name": "totalFare",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//span[@class='totalFare']"
+            }
+         ]
+      }
+   ]
+}

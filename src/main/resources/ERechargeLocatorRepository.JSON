@@ -1,0 +1,162 @@
+{
+   "pages":[
+      {
+         "name":"eRechargeHome",
+         "uiObjects":[
+            {
+               "name":"eRecharge",
+               "type":"link",
+               "locatorType":"id",
+               "locatorValue":"erechargeProductNav"
+            },
+            {
+               "name":"prepaid",
+               "type":"tab",
+               "locatorType":"xpath",
+               "locatorValue":"//span[text()='Mobile Prepaid']"
+            },
+            {
+               "name":"pln",
+               "type":"tab",
+               "locatorType":"xpath",
+               "locatorValue":"//span[text()='PLN']"
+            },
+            {
+               "name":"pam",
+               "type":"tab",
+               "locatorType":"xpath",
+               "locatorValue":"//span[text()='PAM']"
+            },
+            {
+               "name":"postpaid",
+               "type":"tab",
+               "locatorType":"xpath",
+               "locatorValue":"//span[text()='Mobile Postpaid']"
+            }, 
+            {
+               "name":"operator",
+               "type":"select",
+               "locatorType":"id",
+               "locatorValue":"selOper"
+            }, 
+            {
+               "name":"plan",
+               "type":"select",
+               "locatorType":"id",
+               "locatorValue":"selPlan"
+            },
+            {
+               "name":"payableAmount",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='plan' and @style='display: inline-block;']//div[@class='currency']"
+            }, 
+            {
+               "name":"planFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='plan' and @style='display: inline-block;']//p[@class='productName']"
+            }, 
+            {
+               "name":"buyBtn",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='plan' and @style='display: inline-block;']//div[contains(@class, 'js-buyBtn')]"
+            }
+         ]
+      }, 
+      {
+      	"name": "commonPageHeader",
+      	"uiObjects": [ 
+            {
+               "name":"operatorName",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//span[contains(@class, 'js-operName')]"
+            },
+            {
+            	"name":"productName",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//span[contains(@class, 'js-prodName')]"
+            },
+            {
+            	"name":"productPrice",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//span[contains(@class, 'js-planAmt')]"
+            }
+      	]
+      },
+      {
+      	"name": "customerDetails",
+      	"uiObjects" : [ 
+            {
+            	"name":"customerId",
+               "type":"input",
+               "locatorType":"id",
+               "locatorValue":"accountToRecharge"
+            },
+            {
+            	"name":"contactNo",
+               "type":"input",
+               "locatorType":"id",
+               "locatorValue":"contactMobile"
+            },
+            {
+            	"name":"contactEmail",
+               "type":"input",
+               "locatorType":"id",
+               "locatorValue":"contactEmail"
+            },
+            {
+            	"name":"denominationPrice",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//label[contains(@class, 'js-planAmt')]"
+            },
+            {
+            	"name":"amountToBePaid",
+               "type":"input",
+               "locatorType":"xpath",
+               "locatorValue":"//label[contains(@class, 'js-planTotal')]"
+            },
+            {
+            	"name":"termsCondition",
+               "type":"checkBox",
+               "locatorType":"id",
+               "locatorValue":"read_terms_label"
+            },
+            {
+            	"name":"proceedPayment",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":"//div[contains(@class, 'js-proceedBtn')]"
+            } 
+      	]
+      },
+      {
+      	"name": "paymentPageHeader",
+      	"uiObjects": [ 
+      		{
+            	"name":"customerId",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//label[@class='val num']"
+            },
+            {
+            	"name":"contactNo",
+               "type":"input",
+               "locatorType":"xpath",
+               "locatorValue":"//span[@class='js-contactMob']"
+            },
+            {
+            	"name":"contactEmail",
+               "type":"input",
+               "locatorType":"xpath",
+               "locatorValue":"//span[@class='js-contactEmail']"
+            }
+      	]
+      }
+   ]
+}

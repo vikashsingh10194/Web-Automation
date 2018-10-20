@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SAUDI B2C Staging All Product Test Suite" data-provider-thread-count="1"
+	annotations="JDK">
+	<listeners>
+		<listener class-name="com.via.utils.TestNgCustomReport" />
+	</listeners>
+	<test verbose="2" name="SAUDIB2C INTL Flight Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="saStagingViaUrl" />
+		<parameter name="dataSheetRowCount" value="4" />
+		<classes>
+			<class name="com.via.testcases.saudi.IntlFlightsTestCase" />
+		</classes>
+	</test>
+	<test verbose="2" name="SAUDIB2C Hotel Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="saStagingViaUrl" />
+		<parameter name="dataSheetRowCount" value="2" />
+		<classes>
+			<class name="com.via.testcases.saudi.HotelsTestCase" />
+		</classes>
+	</test>
+	
+</suite>

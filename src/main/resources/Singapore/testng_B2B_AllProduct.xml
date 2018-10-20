@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SG All Product Test Suite"
+	data-provider-thread-count="1" annotations="JDK">
+	<listeners>
+		<listener class-name="com.via.utils.TestNgCustomReport" />
+	</listeners>
+	<test verbose="2" name="SGB2B INTL Flight Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="sgB2bUrl" />
+		<parameter name="dataSheetRowCount" value="4" />
+		<classes>
+			<class name="com.via.testcases.singapore.IntlFlightsTestCaseReseller" />
+		</classes>
+	</test>
+	<test verbose="2" name="SGB2B Hotels Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="sgB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2" />
+		<classes>
+			<class name="com.via.testcases.singapore.HotelsTestCaseReseller" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,469 @@
+{
+	"pages": [
+		{
+			"name": "holidaysHome",
+			"uiObjects": [
+				{
+					"name": "holidaysTab",
+					"type": "input",
+					"locatorType": "xpath",
+					"locatorValue": "//span[text()='Holidays']"
+				},
+				{
+					"name": "domestic",
+					"type": "tab",
+					"locatorType": "className",
+					"locatorValue": "domestic"
+				},
+				{
+					"name": "international",
+					"type": "tab",
+					"locatorType": "className",
+					"locatorValue": "international"
+				},
+				{
+					"name": "destination",
+					"type": "input",
+					"locatorType": "id",
+					"locatorValue": "destination"
+				},
+				{
+					"name": "destinationAutoComplete",
+					"type": "autoComplete",
+					"locatorType": "id",
+					"locatorValue": "ui-id-1"
+				},
+				{
+					"name": "destinationCity",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "(//ul[@id='ui-id-1']//span[contains(translate(text(), 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'), 'destination')]/ancestor::li[@class='ui-menu-item'])"
+				},
+				{
+					"name": "calender",
+					"type": "calenderTextBox",
+					"locatorType": "id",
+					"locatorValue": "departure"
+				},
+				{
+					"name": "roomSelector",
+					"type": "dropDown",
+					"locatorType": "className",
+					"locatorValue": "roomsDisplay"
+				},
+				{
+					"name": "searchHoliday",
+					"type": "input",
+					"locatorType": "id",
+					"locatorValue": "search-holiday-btn"
+				},
+				{
+					"name": "increaseAdult",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='toModify']//div[@class='counter-element adult']//div[@class='plus']"
+				},
+				{
+					"name": "decreaseAdult",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='toModify']//div[@class='counter-element adult']//div[@class='minus']"
+				},
+				{
+					"name": "adultCount",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='toModify']//div[@class='counter-element adult']//div[@class='count']"
+				},
+				{
+					"name": "increaseChild",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='toModify']//div[@class='counter-element child']//div[@class='plus']"
+				},
+				{
+					"name": "decreaseChild",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='toModify']//div[@class='counter-element child']//div[@class='minus']"
+				},
+				{
+					"name": "childCount",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='toModify']//div[@class='counter-element child']//div[@class='count']"
+				},
+				{
+					"name": "childWithBed",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//select[@name='childAge-toModify']"
+				},
+				{
+					"name": "addRoom",
+					"type": "button",
+					"locatorType": "id",
+					"locatorValue": "addRoom"
+				},
+				{
+					"name": "done",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='roomConfig']//div[@class='done']"
+				},
+				{
+					"name": "cancel",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='roomConfig']//div[@class='cancel']"
+				}
+			]
+		},
+		{
+			"name": "holidaySearchResults",
+			"uiObjects": [
+				{
+					"name": "destinationCity",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='city']"
+				},
+				{
+					"name": "checkInOutDate",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//span[@class='dt']"
+				},
+				{
+					"name": "roomCount",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//span[@class='num'][1]"
+				},
+				{
+					"name": "adultCount",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//span[@class='num'][2]"
+				},
+				{
+					"name": "childCount",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//span[@class='num'][3]"
+				},
+				{
+					"name": "totalHolidayCount",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//h4[contains(@class,'resCount')]/span"
+				},
+				{
+					"name": "bookPackage",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "(//button[contains(@class, 'bookCTA')])[1]"
+				},
+				{
+					"name": "resultDiv",
+					"type": "Div",
+					"locatorType": "xpath",
+					"locatorValue": "(//div[@class='resultSet']//div[contains(@class, 'result')])[count]"
+				},
+				{
+					"name": "sendEnquiry",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "(//button[contains(@class, 'enquireCTA')])[1]"
+				},
+				{
+					"name": "sendEnquiryFirstName",
+					"type": "textBox",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@id='enquiryForm']//input[@name='fName']"
+				},
+				{
+					"name": "sendEnquiryLastName",
+					"type": "textBox",
+					"locatorType": "xpath",
+					"locatorValue": "//input[@name='lName']"
+				},
+				{
+					"name": "sendEnquiryEmail",
+					"type": "textBox",
+					"locatorType": "xpath",
+					"locatorValue": "//input[@name='email']"
+				},
+				{
+					"name": "sendEnquiryISDCode",
+					"type": "textBox",
+					"locatorType": "xpath",
+					"locatorValue": "//select[@id='enquiryISD']"
+				},
+				{
+					"name": "sendEnquiryMobileno",
+					"type": "textBox",
+					"locatorType": "xpath",
+					"locatorValue": "//input[@name='enqMobile']"
+				},
+				{
+					"name": "calendarSelect",
+					"type": "calendar",
+					"locatorType": "id",
+					"locatorValue": "enquiryDep"
+				},
+				{
+					"name": "submitSendEnquiry",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//span[@class='submitForm send']"
+				},
+				{
+					"name": "cancelSendEnquiry",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//span[@class='cancel js-back-result']"
+				},
+				{
+					"name": "alertMsg",
+					"type": "alert",
+					"locatorType": "xpath",
+					"locatorValue": "//*[@id='viaAlert']//div[@class='viaAlertMsg']"
+				},
+				{
+					"name": "getHotelText",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "(((//button[contains(@class, 'bookCTA')])[1])//ancestor::div[contains(@class, 'result ')])//div[@class='name js-open-details js-toolTip']"
+				},
+				{
+					"name": "getHotelName",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='popover hotels']//span[@class='u_width65 u_txtEllipsis']"
+				},
+				{
+					"name": "packageName",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "(((//button[contains(@class, 'bookCTA')])[1])//ancestor::div[contains(@class, 'result ')])//div[@class='name js-open-details js-toolTip']"
+				},
+				{
+					"name": "packageCalenderBookButton",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class ='u_dispTableRow u_font12 u_semibold calendar-content']//div[@class ='CTA CTA-Calendar-Book' and contains(@data-datestr,'toModify')] "
+				},
+				{
+					"name": "packageCalenderBookButtonCalendar",
+					"type": "calendarModalPanel",
+					"locatorType": "className",
+					"locatorValue": "holiday-full-calendar"
+				},
+				{
+					"name": "calendarMonth",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//span[@class='u_bold u_font16 u_padL15']"
+				},
+				{
+					"name": "calendarYear",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//span[@class='u_light u_font16 u_padR15']"
+				},
+				{
+					"name": "calendarNavigation",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//i[@class='nav-right']"
+				}
+			]
+		},
+		{
+			"name": "guestsInput",
+			"uiObjects": [
+				{
+					"name": "topHotelName",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='snapshot oneLiner js-oneliner']//span[@class='city']"
+				},
+				{
+					"name": "topCheckinCheckout",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='snapshot oneLiner js-oneliner']//span[@class='dt']"
+				},
+				{
+					"name": "noofNights",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='snapshot oneLiner js-oneliner']//div[@class='durationNums']//span[@class='num'][1]"
+				},
+				{
+					"name": "noofDays",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='snapshot oneLiner js-oneliner']//div[@class='durationNums']//span[@class='num'][2]"
+				},
+				{
+					"name": "topAdults",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='snapshot oneLiner js-oneliner']//div[@class='paxNums']//span[@class='num'][1]"
+				},
+				{
+					"name": "topChildren",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='snapshot oneLiner js-oneliner']//div[@class='paxNums']//span[@class='num'][2]"
+				},
+				{
+					"name": "topTotalPrice",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='snapshot oneLiner js-oneliner']//span[@class='js-total-amt-pay']"
+				},
+				{
+					"name": "leftHotelName",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='sectionL']//div[@class='hotelName']"
+				},
+				{
+					"name": "leftPackageName",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='sectionL']//div[@class='packageName']"
+				},
+				{
+					"name": "leftCityCountry",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='sectionL']//div[@class='cityCont']"
+				},
+				{
+					"name": "leftRoomName",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='sectionL']//div[@class='roomName']"
+				},
+				{
+					"name": "LeftInclusions",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='sectionL']//div[@class='inclusion']"
+				},
+				{
+					"name": "leftCheckinCheckout",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class ='hotelDetails']//div[@class='hotelDates']"
+				},
+				{
+					"name": "rooms",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='packageDetails']//div[@class='packageDuration']"
+				},
+				{
+					"name": "adults",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='packageDetails']//div[@class='paxNums']//span[@class='num'][1]"
+				},
+				{
+					"name": "children",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='packageDetails']//div[@class='paxNums']//span[@class='num'][2]"
+				},
+				{
+					"name": "guestExpand",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@id='paxRoom-toModify']//span[@class='paxOpenClose via-collapse-control expand']"
+				},
+				{
+					"name": "guestTitle",
+					"type": "select",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@id='toModify']//select[@class='js-title']"
+				},
+				{
+					"name": "guestFirstName",
+					"type": "input",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@id='toModify']//input[@class='js-name js-FName js-alphaSpace']"
+				},
+				{
+					"name": "guestLastName",
+					"type": "input",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@id='toModify']//input[@class='js-name js-LName js-alphaSpace']"
+				},
+				{
+					"name": "guestDOBDay",
+					"type": "select",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@id='toModify']//select[@class='js-day js-dob-day']"
+				},
+				{
+					"name": "guestDOBMonth",
+					"type": "select",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@id='toModify']//select[@class='js-month js-dob-month']"
+				},
+				{
+					"name": "guestDOBYear",
+					"type": "select",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@id='toModify']//select[@class='js-year js-dob-year']"
+				},
+				{
+					"name": "ISDcode",
+					"type": "select",
+					"locatorType": "id",
+					"locatorValue": "ISDCodeTr"
+				},
+				{
+					"name": "contactMobile",
+					"type": "input",
+					"locatorType": "id",
+					"locatorValue": "contactMobile"
+				},
+				{
+					"name": "contactEmail",
+					"type": "input",
+					"locatorType": "id",
+					"locatorValue": "contactEmail"
+				},
+				{
+					"name": "readTermsLabel",
+					"type": "label",
+					"locatorType": "id",
+					"locatorValue": "read_terms_label"
+				},
+				{
+					"name": "totalFareAmount",
+					"type": "text",
+					"locatorType": "xpath",
+					"locatorValue": "//div[@class='totPay']//span[@class='price']"
+				},
+				{
+					"name": "makePayment",
+					"type": "button",
+					"locatorType": "id",
+					"locatorValue": "makePayCTA"
+				},
+				{
+					"name": "confirmationButton",
+					"type": "button",
+					"locatorType": "id",
+					"locatorValue": "confirmProceedPayBtn"
+				}
+			]
+		}
+	]
+}

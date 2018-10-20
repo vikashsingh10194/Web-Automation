@@ -1,0 +1,656 @@
+{
+   "pages":[
+      {
+         "name":"home",
+         "uiObjects":[
+            {
+               "name":"flights",
+               "type":"link",
+               "locatorType":"id",
+               "locatorValue":"Flights"
+            },
+            {
+               "name":"hotels",
+               "type":"link",
+               "locatorType":"id",
+               "locatorValue":"Hotels"
+            },
+            {
+               "name":"flightHotels",
+               "type":"link",
+               "locatorType":"id",
+               "locatorValue":"Flight + Hotels"
+            },
+            {
+               "name":"holidays",
+               "type":"link",
+               "locatorType":"id",
+               "locatorValue":"Holidays"
+            },
+            {
+               "name":"bus",
+               "type":"link",
+               "locatorType":"id",
+               "locatorValue":"Bus"
+            },
+            {
+               "name":"rail",
+               "type":"link",
+               "locatorType":"xpath",
+               "locatorValue":"//span[text()='Kereta Api']"
+            },
+            {
+               "name":"customerSupport",
+               "type":"link",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='contact hideFromCustomer']/a"
+            },
+            {
+            	"name":"language",
+               	"type":"link",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@id='languageSelector']//span"
+            },
+             {
+               "name":"crossHomepageKey",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@class='viaAlertClose']"
+            },
+ 
+            {
+               "name":"signInMenu",
+               "type":"dropDown",
+               "locatorType":"id",
+               "locatorValue":"loginSecondaryNav"
+            },
+            {
+               "name":"signUp",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//span[@class='signUpBtn']"
+            },
+            {
+               "name":"emailID",
+               "type":"input",
+               "locatorType":"id",
+               "locatorValue":"loginIdText"
+            },
+            {
+               "name":"password",
+               "type":"input",
+               "locatorType":"id",
+               "locatorValue":"passwordText"
+            },
+            {
+               "name":"signIn",
+               "type":"button",
+               "locatorType":"id",
+               "locatorValue":"loginValidate"
+            },
+            {
+               "name":"forgotPassword",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@id='SignInContent']//label[@for='forgotRadio']"
+            },
+            {
+               "name":"faceBookLogin",
+               "type":"link",
+               "locatorType":"id",
+               "locatorValue":"loginFacebook"
+            },
+            {
+               "name":"google+Login",
+               "type":"link",
+               "locatorType":"id",
+               "locatorValue":"loginGoogle"
+            },
+            {
+               "name":"corporateLogin",
+               "type":"link",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@id='SignInContent']//div[@class='panelCol txtLeft']//a[@class='CTA u_fontW600 u_txtDecoNone']"
+            },
+            {
+               "name":"agentLogin",
+               "type":"link",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@id='SignInContent']//div[@class='panelCol txtLeft u_no_border']//a[@class='CTA u_fontW600 u_txtDecoNone']"
+            }, 
+            {
+               	"name":"alertMsg",
+               	"type":"link",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@id='viaAlert']//div[@class='viaAlertMsg']"
+            }, 
+            {	
+            	"name":"signOut",
+               	"type":"link",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@id='userNameSecondaryNavContent']//a[contains(text(), 'Logout')]"
+            },
+            {
+            	"name":"userMenu",
+               	"type":"link",
+               	"locatorType":"id",
+               	"locatorValue":"userNameSecondaryNav"
+            },
+            {
+               "name":"company",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//li[text()='Company']"
+            }
+         ]
+      },
+      {
+         "name":"calendar",
+         "uiObjects":[
+            {
+               "name":"calendarBackwardKey",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='toModify']//span[contains(@class,'js-prev-month')]"
+            },
+            {
+               "name":"calendarForwardKey",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='toModify']//span[contains(@class,'js-next-month')]"
+            },
+            {
+               "name":"monthBox",
+               "type":"box",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='toModify']//div[@class='vc-month-box']"
+            },
+            {
+               "name":"monthBoxHeader",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='toModify']//div[@class='vc-month-box-container']"
+            }
+         ]
+      },
+      {
+         "name":"payments",
+         "uiObjects":[
+         	{
+               "name":"savedCard",
+               "type":"tab",
+               "locatorType":"xpath",
+               "locatorValue":"//div[contains(text(),'Saved Cards')]"
+            },
+            {
+               "name":"savedCardCVV",
+               "type":"tab",
+               "locatorType":"id",
+               "locatorValue":"savedCardCC_Cvv"
+            },
+            {
+            	"name":"dropDownOption",
+               	"type":"tab",
+               	"locatorType":"xpath",
+               	"locatorValue":".//label[@class='customSBox']//select[@id='expressCardSelect']"
+            },
+          {
+            	"name":"selecting123",
+               	"type":"tab",
+               	"locatorType":"xpath",
+               	"locatorValue":".//*[@data-paymode='VENDOR']"
+            },
+            {
+            	"name":"123Banking",
+               	"type":"tab",
+               	"locatorType":"xpath",
+               	"locatorValue":".//*[@class='ppBankLogo ppBankRadio-VENDOR_toModify-logo']"
+            },
+            {
+               "name":"creditCard",
+               "type":"tab",
+               "locatorType":"xpath",
+               "locatorValue":"//div[contains(text(),'Credit ')]"
+            },
+            {
+               "name":"netBanking",
+               "type":"tab",
+               "locatorType":"xpath",
+               "locatorValue":"//div[contains(@class,'js-payment-mode payType')][contains(@data-mediumhandler,'netbankinguihandler')]/div[1]"
+            },
+            {
+               "name":"wallet",
+               "type":"tab",
+               "locatorType":"xpath",
+               "locatorValue":"//div[contains(@class,'js-payment-mode payType')][contains(@data-mediumhandler,'walletuihandler')]"
+            },
+            {
+               "name":"debitCard",
+               "type":"tab",
+               "locatorType":"xpath",
+               "locatorValue":"//div[contains(text(),'Debit ')]"
+            },
+            {
+               "name":"radioVM",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@id='MV']"
+            },
+            {
+               "name":"emi",
+               "type":"tab",
+               "locatorType":"xpath",
+               "locatorValue":"//div[contains(@class,'js-payment-mode payType')][contains(@data-mediumhandler,'emiuihandler')]"
+            },
+            {
+               "name":"creditCardNumber",
+               "type":"text",
+               "locatorType":"id",
+               "locatorValue":"ccNum-allcardsuihandler"
+            },        
+            {
+               "name":"hKCreditCardNo",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//html/body/form/table[2]/tbody/tr[12]/td/table/tbody/tr[2]/td[2]/input[toModify]"
+            },
+            {
+               "name":"creditCardName",
+               "type":"text",
+               "locatorType":"id",
+               "locatorValue":"ccName-allcardsuihandler"
+            },
+            {
+               "name":"creditCardValidityMonth",
+               "type":"text",
+               "locatorType":"id",
+               "locatorValue":"ccMon-allcardsuihandler"
+            },
+            {
+               "name":"hKCCValidityMonth",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//select[@class='ccdetails' and @name='expiryMonth']"
+            },
+            {
+               "name":"creditCardValidityYear",
+               "type":"text",
+               "locatorType":"id",
+               "locatorValue":"ccYr-allcardsuihandler"
+            },
+            {
+               "name":"hKCCValidityYear",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//select[@class='ccdetails' and @name='expiryYear']"
+            },
+            {
+               "name":"creditCardCVV",
+               "type":"text",
+               "locatorType":"id",
+               "locatorValue":"ccCvv-allcardsuihandler"
+            },
+            {
+               "name":"hKCCCVVNo",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//input[@class='ccdetails' and @name='cardVerificationNumber']"
+            },
+            {
+               "name":"proceed",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//img[@src='images/proceed.gif']"
+            },
+              {
+               "name":"cancelOfJetco",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//img[@src='images/cancel.gif']"
+            },
+            {
+				"name": "paymentTermsCond",
+				"type": "label",
+				"locatorType": "id",
+				"locatorValue": "label-allcardsuihandler-chk"
+			}, 
+            {
+               "name":"emiCreditCardNumber",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='pp-emiuihandler']//input[@id='ccNum-allcardsuihandler']"
+            },
+            {
+               "name":"emiCreditCardName",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='pp-emiuihandler']//input[@id='ccName-allcardsuihandler']"
+            },
+            {
+               "name":"emiCreditCardValidityMonth",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='pp-emiuihandler']//input[@id='ccMon-allcardsuihandler']"
+            },
+            {
+               "name":"emiCreditCardValidityYear",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='pp-emiuihandler']//input[@id='ccYr-allcardsuihandler']"
+            },
+            {
+               "name":"emiCreditCardCVV",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='pp-emiuihandler']//input[@id='ccCvv-allcardsuihandler']"
+            },
+            {
+               "name":"axisBankNetBanking",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-AXIS_BANK']/..)/label[1]"
+            },
+            {
+               "name":"hdfcBankNetBanking",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-HDFC_BANK_RETAIL']/..)/label[1]"
+            },
+            {
+               "name":"iciciBankNetBanking",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-ICICI_BANK']/..)/label[1]"
+            },
+            {
+               "name":"kotakBankNetBanking",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-KOTAK_MAHINDRA_BANK']/..)/label[1]"
+            },
+            {
+               "name":"pnbBankNetBanking",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-PNB_RETAIL_ACCOUNTS']/..)/label[1]"
+            },
+            {
+               "name":"sbiBankNetBanking",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-STATE_BANK_OF_INDIA']/..)/label[1]"
+            },
+            {
+               "name":"netbankSelector",
+               "type":"Select",
+               "locatorType":"xpath",
+               "locatorValue":"//select[contains(@class,'customSBox')]"
+            },
+            {
+               "name":"citrusWallet",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-Citrus_Wallet']/..)/label[1]"
+            },
+            {
+               "name":"freeChargeWallet",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-FreeCharge']/..)/label[1]"
+            },
+            {
+               "name":"payUmoneyWallet",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-PayUmoney']/..)/label[1]"
+            },
+            {
+               "name":"sbiBuddyWallet",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-SBI_Buddy']/..)/label[1]"
+            },
+            {
+               "name":"emiHDFCBank",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-HDFC_Bank']/..)/label[1]"
+            },
+            {
+               "name":"emiICICIBank",
+               "type":"Label",
+               "locatorType":"xpath",
+               "locatorValue":"(//input[@id ='ppBankRadio-ICICI_Bank']/..)/label[1]"
+            },
+            {
+               "name":"payButton",
+               "type":"Button",
+               "locatorType":"id",
+               "locatorValue":"paymentCTA"
+            },
+            {
+              "name":"HKBankingSelection",
+              "type":"tab",
+              "locatorType":"xpath",
+              "locatorValue":".//*[@class='ppBankLogo ppBankRadio-VENDOR_toModify-logo']"
+          	},
+            {
+               "name":"totalFareAmount",
+               "type":"Button",
+               "locatorType":"xpath",
+               "locatorValue":"html/body/form/table[2]/tbody/tr[7]/td/table/tbody/tr[3]/td[2]"
+            },
+            {
+               "name":"continue",
+               "type":"",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@id='confirmDivPopupCTA']"
+            },  
+            {
+               "name":"cancel",
+               "type":"Button",
+               "locatorType":"xpath",
+               "locatorValue":".//img[@src='images/cancel.gif']"
+            },
+            {
+               "name":"3dSecurePaymentTotal",
+               "type":"Button",
+               "locatorType":"xpath",
+               "locatorValue":"//span[@title='INR']"
+            },
+            {
+               "name":"emiTenure",
+               "type":"radio",
+               "locatorType":"id",
+               "locatorValue":"tenuretoModify"
+            },
+            {
+               "name":"citrusCreditCard",
+               "type":"radio",
+               "locatorType":"id",
+               "locatorValue":"CREDIT_CARD"
+            },
+            {
+               "name":"paymentWalletConfirmation",
+               "type":"radio",
+               "locatorType":"id",
+               "locatorValue":"confirmDivPopupCTA"
+            },
+            {
+               "name":"citrusWalletAmount",
+               "type":"radio",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class ='btnCenter']//span[@name='originalAmt']"
+            },
+            {
+               "name":"totalAmount",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//span[@class='js-total-amt-pay']/span"
+            },
+            {
+               "name":"freeChargeAmount",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"(//div[@class='you-pay']//span)[2]"
+            },
+            {
+               "name":"payUmoneyAmount",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"(//span[@class='order_amnt']//span)[3]"
+            },
+            {
+               "name":"sbiWalletAmount",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='row text-center text-sbi']//div[2]"
+            },
+            {
+				"name": "totalAmountWithConvenience",
+				"type": "text",
+				"locatorType": "xpath",
+				"locatorValue": "//div[@class='prCont']/div[1]/span"
+			},
+			{
+				"name": "bookingRefNo",
+				"type": "text",
+				"locatorType": "xpath",
+				"locatorValue": "//div[@id='bookingIdDiv']/b"
+			},
+			{
+				"name": "citrusCancel",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": ".//span[text()='Cancel']"
+			}, 
+			{
+				"name": "freeChargeCancel",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": ".//a[text()='Back To CCAvenue']"
+			}, 
+			{
+				"name": "payUCancel",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": "html/body/div[1]/ng:view/div[2]/div[1]/div[1]/h5/a/span[2]"
+			}, 
+			{
+				"name": "payUCancel",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": "html/body/div[1]/ng:view/div[2]/div[1]/div[1]/h5/a/span[2]"
+			}, 
+			{
+				"name": "sbiBuddyCancel",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": ".//button[@id='backButton']"
+			}, 
+			{
+				"name": "cardCancelBtn",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": ".//input[@value='Cancel']"
+			},
+			{
+				"name": "123BankingCancelBtn",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": ".//div[@class='form-actions']//a[@id='btnCancel_bank']"
+			},
+			{
+               "name":"bankTransfer",
+               "type":"",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@data-paymode='BA']"
+            },
+            {
+               "name":"selectingBank",
+               "type":"",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@class='ppBankLogo ppBankRadio-BA_toModify-logo']"
+            },
+            {
+             "name":"bookingDetails",
+             "type":"",
+             "locatorType":"xpath",
+             "locatorValue":".//*[@class='jsPayStepLabel active']"
+            },
+            {
+             "name":"atmPay",
+             "type":"",
+             "locatorType":"xpath",
+             "locatorValue":".//*[@data-paymode='ATM']"
+            },
+            {
+               "name":"internetBanking",
+               "type":"",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@data-paymode='NB']"
+            },
+            {
+               "name":"internetBankingBank",
+               "type":"",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@class='ppBankLogo ppBankRadio-NB_toModify-logo']"
+            },
+            {
+               "name":"cancelPayment",
+               "type":"radio",
+               "locatorType":"id",
+               "locatorValue":"btncancel"
+            },
+            {
+               "name":"cardNumber",
+               "type":"",
+               "locatorType":"id",
+               "locatorValue":"cardNumber"
+            },
+            {
+               "name":"tokenNumber",
+               "type":"",
+               "locatorType":"id",
+               "locatorValue":"tokenNumber"
+            },
+            {
+               "name":"submitKey",
+               "type":"",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@class='subBtn']"
+            },
+           {
+               "name":"masterpass",
+               "type":"",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@data-paymode='VENDOR']"
+            },
+             {
+               "name":"masterPassBank",
+               "type":"",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@class='ppBankLogo ppBankRadio-VENDOR_MASTERPASS-logo']"
+            },
+            {
+               "name":"crossOfUAEBANK",
+               "type":"text",
+               "locatorType":"id",
+               "locatorValue":"MasterPass_close"
+            },
+              {
+               "name":"yesContinue",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//*[@class='button command']"
+            },
+			{
+				"name": "3DConfirmationBtn",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": ".//div[@align='center']//img[@src='../../images/bt_confirm_e.jpg']"
+			}
+         ]
+      }
+   ]
+}

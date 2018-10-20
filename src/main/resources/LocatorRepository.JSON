@@ -1,0 +1,943 @@
+{
+	"pages": [{
+		"name": "home",
+		"uiObjects": [{
+			"name": "flights",
+			"type": "link",
+			"locatorType": "id",
+			"locatorValue": "Flights"
+		}, {
+			"name": "hotels",
+			"type": "link",
+			"locatorType": "id",
+			"locatorValue": "Hotels"
+		}, {
+			"name": "flightHotels",
+			"type": "link",
+			"locatorType": "id",
+			"locatorValue": "Flight + Hotels"
+		}, {
+			"name": "holidays",
+			"type": "link",
+			"locatorType": "id",
+			"locatorValue": "Holidays"
+		}, {
+			"name": "bus",
+			"type": "link",
+			"locatorType": "id",
+			"locatorValue": "Bus"
+		}, {
+			"name": "car",
+			"type": "link",
+			"locatorType": "id",
+			"locatorValue": "Cars"
+		}, {
+			"name": "customerSupport",
+			"type": "link",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='contact hideFromCustomer']/a"
+		}, {
+			"name": "signInMenu",
+			"type": "dropDown",
+			"locatorType": "id",
+			"locatorValue": "SignIn"
+		}, {
+			"name": "signUp",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@id='SignInContent']//span[@class='signUpBtn']"
+		}, {
+			"name": "emailID",
+			"type": "input",
+			"locatorType": "id",
+			"locatorValue": "loginIdText"
+		}, {
+			"name": "password",
+			"type": "input",
+			"locatorType": "id",
+			"locatorValue": "passwordText"
+		}, {
+			"name": "signIn",
+			"type": "button",
+			"locatorType": "id",
+			"locatorValue": "loginValidate"
+		}, {
+			"name": "forgotPassword",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@id='SignInContent']//label[@for='forgotRadio']"
+		}, {
+			"name": "faceBookLogin",
+			"type": "link",
+			"locatorType": "id",
+			"locatorValue": "loginFacebook"
+		}, {
+			"name": "google+Login",
+			"type": "link",
+			"locatorType": "id",
+			"locatorValue": "loginGoogle"
+		}, {
+			"name": "corporateLogin",
+			"type": "link",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@id='SignInContent']//div[@class='panelCol txtLeft']//a[@class='CTA u_fontW600 u_txtDecoNone']"
+		}, {
+			"name": "agentLogin",
+			"type": "link",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@id='SignInContent']//div[@class='panelCol txtLeft u_no_border']//a[@class='CTA u_fontW600 u_txtDecoNone']"
+		}]
+	}, {
+		"name": "calendar",
+		"uiObjects": [{
+				"name": "departureCalendarBackwardKey",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": "//div[@id='depart-cal']//span[contains(@class,'js-prev-month')]"
+			}, {
+				"name": "departureCalendarForwardKey",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": "//div[@id='depart-cal']//span[contains(@class,'js-next-month')]"
+			}, {
+				"name": "departureMonthBox",
+				"type": "box",
+				"locatorType": "xpath",
+				"locatorValue": "//div[@id='depart-cal']//div[@class='vc-month-box']"
+			}, {
+				"name": "departureMonthBoxHeader",
+				"type": "text",
+				"locatorType": "xpath",
+				"locatorValue": "//div[@id='depart-cal']//div[@class='vc-month-box-container']"
+			},
+
+			{
+				"name": "returnCalendarBackwardKey",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": "//div[@id='return-cal']//span[contains(@class,'js-prev-month')]"
+			}, {
+				"name": "returnCalendarForwardKey",
+				"type": "button",
+				"locatorType": "xpath",
+				"locatorValue": "//div[@id='return-cal']//span[contains(@class,'js-next-month')]"
+			}, {
+				"name": "returnMonthBox",
+				"type": "box",
+				"locatorType": "xpath",
+				"locatorValue": "//div[@id='return-cal']//div[@class='vc-month-box']"
+			}, {
+				"name": "returnMonthBoxHeader",
+				"type": "text",
+				"locatorType": "xpath",
+				"locatorValue": "//div[@id='return-cal']//div[@class='vc-month-box-container']"
+			}
+		]
+	}, {
+		"name": "flightHome",
+		"uiObjects": [{
+			"name": "oneWay",
+			"type": "radio",
+			"locatorType": "className",
+			"locatorValue": "one-way"
+		}, {
+			"name": "roundTrip",
+			"type": "radio",
+			"locatorType": "className",
+			"locatorValue": "round-trip"
+		}, {
+			"name": "multiCity",
+			"type": "radio",
+			"locatorType": "className",
+			"locatorValue": "multi-city"
+		}, {
+			"name": "source",
+			"type": "input",
+			"locatorType": "id",
+			"locatorValue": "source"
+		}, {
+			"name": "sourceAutoSearchBox",
+			"type": "autoSearchBox",
+			"locatorType": "id",
+			"locatorValue": "ui-id-1"
+		}, {
+			"name": "destination",
+			"type": "input",
+			"locatorType": "id",
+			"locatorValue": "destination"
+		}, {
+			"name": "destinationAutoSearchBox",
+			"type": "autoSearchBox",
+			"locatorType": "id",
+			"locatorValue": "ui-id-2"
+		}, {
+			"name": "departureDate",
+			"type": "text",
+			"locatorType": "id",
+			"locatorValue": "departure"
+		}, {
+			"name": "departureCalendar",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='element']//div[@class='calendar-icon']"
+		}, {
+			"name": "returnDate",
+			"type": "text",
+			"locatorType": "id",
+			"locatorValue": "return"
+		}, {
+			"name": "adultCountMinus",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='counter-element adult']//div[@class='minus']"
+		}, {
+			"name": "adultCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='counter-element adult']//div[@class='count']"
+		}, {
+			"name": "adultCountPlus",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='counter-element adult']//div[@class='plus']"
+		}, {
+			"name": "childrenCountMinus",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='counter-element child']//div[@class='minus']"
+		}, {
+			"name": "childrenCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='counter-element child']//div[@class='count']"
+		}, {
+			"name": "childrenCountPlus",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='counter-element child']//div[@class='plus']"
+		}, {
+			"name": "infantCountMinus",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='counter-element infant']//div[@class='minus']"
+		}, {
+			"name": "infantCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='counter-element infant']//div[@class='count']"
+		}, {
+			"name": "infantCountPlus",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": ".//div[@class='counter-element infant']//div[@class='plus']"
+		}, {
+			"name": "moreOptionSearchBox",
+			"type": "button",
+			"locatorType": "className",
+			"locatorValue": "more"
+		}, {
+			"name": "searchFlight",
+			"type": "button",
+			"locatorType": "id",
+			"locatorValue": "search-flight-btn"
+		}, {
+			"name": "recentSearch",
+			"type": "button",
+			"locatorType": "className",
+			"locatorValue": "recentSearch"
+		}, {
+			"name": "recentSearchesResult",
+			"type": "link",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='recentSearchBody']//div[@class='result']"
+		}]
+	}, {
+		"name": "flightSearchResult",
+		"uiObjects": [{
+			"name": "sourceCityName",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='labl onw']//div[@class='airpt']"
+		}, {
+			"name": "sourceCityCode",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='labl onw']//span[@class='code']"
+		}, {
+			"name": "destinationCityCode",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='labl dest']//span[@class='code']"
+		}, {
+			"name": "destinationCityName",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='labl dest']//div[@class='airpt']"
+		}, {
+			"name": "onwardDate",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='dateLabl']/span[@class='dt'][1]"
+		}, {
+			"name": "returnDate",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='dateLabl']/span[@class='dt'][2]"
+		}, {
+			"name": "adultCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='paxNums']/span[@class='num'][1]"
+		}, {
+			"name": "childrenCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='paxNums']/span[@class='num'][2]"
+		}, {
+			"name": "infantCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='paxNums']/span[@class='num'][3]"
+		}, {
+			"name": "searchModification",
+			"type": "button",
+			"locatorType": "className",
+			"locatorValue": "labl modify"
+		}, {
+			"name": "onwardPreviousDay",
+			"type": "link",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='onwardResults']//a[@class='via_prev_day']"
+		}, {
+			"name": "onwardNextDay",
+			"type": "link",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='onwardResults']//a[@class='via_next_day']"
+		}, {
+			"name": "returnPreviousDay",
+			"type": "link",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='onwardResults']//a[@class='via_prev_day']"
+		}, {
+			"name": "returnNextDay",
+			"type": "link",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='onwardResults']//a[@class='via_next_day']"
+		}, {
+			"name": "sortOnwardResultButton",
+			"type": "dropdown",
+			"locatorType": "className",
+			"locatorValue": "setSort setSortOnward"
+		}, {
+			"name": "sortReturnResultButton",
+			"type": "dropdown",
+			"locatorType": "className",
+			"locatorValue": "setSort setSortReturn"
+		}, {
+			"name": "select",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//button[@class='bookCTA']"
+		}, {
+			"name": "resultDiv",
+			"type": "",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])"
+		}, {
+			"name": "flightNo",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltNum']"
+		}, {
+			"name": "flightName",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='name js-toolTip']"
+		}, {
+			"name": "departTime",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='depTime']/div[@class='time']"
+		}, {
+			"name": "departCity",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='depTime']/div[@class='city']"
+		}, {
+			"name": "arrivalTime",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='arrTime']/div[@class='time']"
+
+		}, {
+			"name": "arrivalCity",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='arrTime']/div[@class='city']"
+		}, {
+			"name": "duration",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDur']/div[@class='dur']"
+		}, {
+			"name": "stops",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDur']//div[@class='stops']"
+		}, {
+			"name": "fare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='prCont']//span[@class='price']"
+		}, {
+			"name": "route",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='route js-toolTip']"
+		}, {
+			"name": "baggage",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//li[@class='bagInfo']"
+		}, {
+			"name": "flightDetails",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//li[@class='flightDetails']"
+		}, {
+			"name": "fareRules",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//li[@class='fare-rules']"
+		}, {
+			"name": "fareDetails",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//li[@class='fareDetails']"
+		}, {
+			"name": "baggageFromToDeatils",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='bagInfoDiv det-div']//span[@class='frmTo']"
+		}, {
+			"name": "baggageFlightNo",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='bagInfoDiv det-div']//div[@class='airlineFltNo']"
+		}, {
+			"name": "baggageAirLineName",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='bagInfoDiv det-div']//div[@class='airlineName js-toolTip']"
+		}, {
+			"name": "adultCheckInBaggage",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='bagInfoDiv det-div']//div[@class='adultBaggage']//span[@class='dark']"
+		}, {
+			"name": "adultCabinBaggage",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='bagInfoDiv det-div']//div[@class='adultCabinBaggage']//span[@class='dark']"
+		}, {
+			"name": "childCheckInBaggage",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='bagInfoDiv det-div']//div[@class='childBaggage']//span[@class='dark']"
+		}, {
+			"name": "childCabinBaggage",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='bagInfoDiv det-div']//div[@class='childCabinBaggage']//span[@class='dark']"
+		}, {
+			"name": "flightFromToDetails",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//span[@class='frmTo']"
+		}, {
+			"name": "flightDepartDate",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//span[@class='depDate']"
+		}, {
+			"name": "flightStops",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//span[@class='stops']"
+		}, {
+			"name": "flightNameFromFlightDetails",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='name']"
+		}, {
+			"name": "flightNoFromFlightDetails",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='fltNum']"
+		}, {
+			"name": "flightDurationFromFlightDetails",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='segTime']"
+		}, {
+			"name": "flightLayOverFromFlightDetails",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='layover']//span[@class='time']"
+		}, {
+			"name": "flightDepartAirPortCode",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='from']//span[@class='airport']"
+		}, {
+			"name": "flightDepartAirPortName",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='from']//span[@class='city']"
+		}, {
+			"name": "flightDepartCountry",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='from']//li[@class='country ']"
+		}, {
+			"name": "flightDepartTime",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='from']//li[@class='departTime']"
+		}, {
+			"name": "flightArrivalAirPortCode",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='to']//span[@class='airport']"
+		}, {
+			"name": "flightArrivalAirPortName",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='to']//span[@class='city']"
+		}, {
+			"name": "flightArrivalCountry",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='to']//li[@class='country']"
+		}, {
+			"name": "flightArrivalTime",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fltDetDiv det-div']//div[@class='to']//li[@class='departTime']"
+		}, {
+			"name": "fareTab",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fareRulesDiv det-div']//li[contains(@class, fareRulesTab)]"
+		}, {
+			"name": "flightFareRefundable",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fareRulesDiv det-div']//div[contains(@class, 'u_floatR')]"
+		}, {
+			"name": "adultFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='6E'])[1])/ancestor::div[@class='result'])//div[@class='fareDetDiv det-div']/div[@class='adultFare']/div[@class='fare']"
+		}, {
+			"name": "adultTotalFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fareDetDiv det-div']/div[@class='adultFare']/div[@class='total']"
+		}, {
+			"name": "childFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fareDetDiv det-div']/div[@class='childFare']/div[@class='fare']"
+		}, {
+			"name": "childTotalFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fareDetDiv det-div']/div[@class='childFare']/div[@class='total']"
+		}, {
+			"name": "infantFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fareDetDiv det-div']/div[@class='infantFare']/div[@class='fare']"
+		}, {
+			"name": "infantTotalFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fareDetDiv det-div']/div[@class='infantFare']/div[@class='total']"
+		}, {
+			"name": "otherFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fareDetDiv det-div']/div[@class='otherFares']/div[@class='fare']"
+		}, {
+			"name": "totalOtherFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fareDetDiv det-div']/div[@class='otherFares']/div[@class='total']"
+		}, {
+			"name": "totalFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result'])//div[@class='fareDetDiv det-div']/div[@class='totalFare']//span[@class='totalFare']"
+		}, {
+			"name": "selectedFlightName",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='bookPanel']//div[@class='flightType']//div[@class='name js-toolTip']"
+		}, {
+			"name": "selectedFlightCode",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='bookPanel']//div[@class='flightType']//div[@class='fltNum']"
+		}, {
+			"name": "selectedFlightDepartTime",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='bookPanel']//div[@class='flightType']//div[@class='depTime']/div[@class='time']"
+		}, {
+			"name": "selectedFlightDepartCity",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='bookPanel']//div[@class='flightType']//div[@class='depTime']/div[@class='airCode']"
+		}, {
+			"name": "selectedFlightArrivalTime",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='bookPanel']//div[@class='flightType']//div[@class='arrTime']/div[@class='time']"
+		}, {
+			"name": "selectedFlightArrivalCity",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='bookPanel']//div[@class='flightType']//div[@class='arrTime']/div[@class='airCode']"
+		}, {
+			"name": "selectedFlightFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='bookPanel']//div[@class='flightType']//span[@class='price']"
+		}, {
+			"name": "grandTotalFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='bookPanel']//div[@class='bookContainer']//span[@class='colCont']"
+		}, {
+			"name": "bookFlights",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='bookPanel']//div[@class='bookContainer']//div[@class='bookCTA return']"
+		}, {
+			"name": "totalFlightCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='resCount']//span)"
+		}, {
+			"name": "flightResultsDiv",
+			"type": "div",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='flightResults']//div[@class='result'])[count]"
+		}, {
+			"name": "endPageMarker",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='inBlk countryLinks u_width28']"
+		}]
+	}, {
+		"name": "travellersInformation",
+		"uiObjects": [{
+			"name": "ISDCode",
+			"type": "dropdown",
+			"locatorType": "id",
+			"locatorValue": "ISDCodeTr"
+		}, {
+			"name": "contactMobile",
+			"type": "input",
+			"locatorType": "id",
+			"locatorValue": "contactMobile"
+		}, {
+			"name": "contactEmail",
+			"type": "input",
+			"locatorType": "id",
+			"locatorValue": "contactEmail"
+		}, {
+			"name": "readTermsLabel",
+			"type": "label",
+			"locatorType": "id",
+			"locatorValue": "read_terms_label"
+		}, {
+			"name": "makePayment",
+			"type": "button",
+			"locatorType": "id",
+			"locatorValue": "makePayCTA"
+		}, {
+			"name": "srcDest",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='fltLeg'])[toModify]//p[@class='frmTo']"
+		}, {
+			"name": "flightName",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='fltLeg'])[toModify]//div[@class='name']"
+		}, {
+			"name": "flightNumber",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='fltLeg'])[toModify]//div[@class='fltNum']/div[1]"
+		}, {
+			"name": "departureDateTime",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='fltLeg'])[toModify]//ul[@class='depArr shortSummary']//span[@class='dateTime'][1]"
+		}, {
+			"name": "arrivalDateTime",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='fltLeg'])[toModify]//ul[@class='depArr shortSummary']//span[@class='dateTime'][2]"
+		}, {
+			"name": "layover",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='fltSegment'][toModify]//div[@class='layover']//span[@class='time']"
+		}, {
+			"name": "onwardFlightsCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='sectionL']//span[@class='numFlts'])[1]"
+		}, {
+			"name": "returnFlightsCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='sectionL']//span[@class='numFlts'])[2]"
+		}, {
+			"name": "passengerExpand",
+			"type": "button",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@id='toModify']//span[@class='paxOpenClose via-collapse-control expand']"
+		}, {
+			"name": "onwardSourceCityCode",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='labl onw']/div[@class='city']"
+		}, {
+			"name": "onwardDestinationCode",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='labl dest']/div[@class='city']"
+		}, {
+			"name": "onwardReturnDate",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='datePax']//span[@class='dt']"
+		}, {
+			"name": "adultCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='paxNums']//span[@class='num'])[1]"
+		}, {
+			"name": "childrenCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='paxNums']//span[@class='num'])[2]"
+		}, {
+			"name": "infantCount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "(//div[@class='paxNums']//span[@class='num'])[3]"
+		}, {
+			"name": "totalFareAmount",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='totPay']//span[@class='price']"
+		}, {
+			"name": "expandFareDetails",
+			"type": "button",
+			"locatorType": "className",
+			"locatorValue": "expand"
+		}, {
+			"name": "travellerType",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='mtabRow']/div[@class='mtabCell']"
+		}, {
+			"name": "travellerFare",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='mtabRow']/div[@class='mtabCell txtRight txtBold']"
+		}, {
+			"name": "taxes",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='mtabRow tax']/div[@class='mtabCell txtRight txtBold']"
+		}]
+	}, {
+		"name": "travellersDetailsValidation",
+		"uiObjects": [{
+			"name": "passengerName",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@id='confirmDetailContainer']//div[@class='travDetTab paxDetTab jsPaxDetCont']//div[@class='row'][toModify]//div[@class='bold jsName col']"
+		}, {
+			"name": "passengerType",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@id='confirmDetailContainer']//div[@class='travDetTab paxDetTab jsPaxDetCont']//div[@class='row'][toModify]//div[@class='jsDetails col']//div[@class='js-type']"
+		}, {
+			"name": "passengerDOB",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@id='confirmDetailContainer']//div[@class='travDetTab paxDetTab jsPaxDetCont']//div[@class='row'][toModify]//div[@class='jsDetails col']//span[@class='bold js-value']"
+		}, {
+			"name": "passengerEmail",
+			"type": "text",
+			"locatorType": "id",
+			"locatorValue": "confirmContactEmail"
+		}, {
+			"name": "passengerMobile",
+			"type": "text",
+			"locatorType": "id",
+			"locatorValue": "confirmContactPhone"
+		}, {
+			"name": "passengers",
+			"type": "text",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='travDetTab paxDetTab jsPaxDetCont']//div[@class='row']"
+		}, {
+			"name": "confirmPaymentButton",
+			"type": "buttton",
+			"locatorType": "id",
+			"locatorValue": "confirmProceedPayBtn"
+		}]
+	}, {
+		"name": "payments",
+		"uiObjects": [{
+			"name": "creditCard",
+			"type": "tab",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='js-payment-mode payType active']"
+		}, {
+			"name": "netBanking",
+			"type": "tab",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='js-payment-mode payType'][contains(@data-mediumhandler,'netbankinguihandler')]/div[1]"
+		}, {
+			"name": "wallet",
+			"type": "tab",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='js-payment-mode payType'][contains(@data-mediumhandler,'walletuihandler')]"
+		}, {
+			"name": "debitCard",
+			"type": "tab",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='js-payment-mode payType'][contains(@data-mediumhandler,'allcardsuihandler')]"
+		}, {
+			"name": "emi",
+			"type": "tab",
+			"locatorType": "xpath",
+			"locatorValue": "//div[@class='js-payment-mode payType'][contains(@data-mediumhandler,'emiuihandler')]"
+		}, {
+			"name": "creditCardNumber",
+			"type": "text",
+			"locatorType": "id",
+			"locatorValue": "ccNum-allcardsuihandler"
+		}, {
+			"name": "creditCardName",
+			"type": "text",
+			"locatorType": "id",
+			"locatorValue": "ccName-allcardsuihandler"
+		}, {
+			"name": "creditCardValidityMonth",
+			"type": "text",
+			"locatorType": "id",
+			"locatorValue": "ccMon-allcardsuihandler"
+		}, {
+			"name": "creditCardValidityYear",
+			"type": "text",
+			"locatorType": "id",
+			"locatorValue": "ccYr-allcardsuihandler"
+		}, {
+			"name": "creditCardCVV",
+			"type": "text",
+			"locatorType": "id",
+			"locatorValue": "ccCvv-allcardsuihandler"
+		}, {
+			"name": "axisBankNetBanking",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-AXIS_BANK']/..)/label[1]"
+		}, {
+			"name": "hdfcBankNetBanking",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-HDFC_BANK_RETAIL']/..)/label[1]"
+		}, {
+			"name": "iciciBankNetBanking",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-ICICI_BANK']/..)/label[1]"
+		}, {
+			"name": "kotakBankNetBanking",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-KOTAK_MAHINDRA_BANK']/..)/label[1]"
+		}, {
+			"name": "pnbBankNetBanking",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-PNB_RETAIL_ACCOUNTS']/..)/label[1]"
+		}, {
+			"name": "sbiBankNetBanking",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-STATE_BANK_OF_INDIA']/..)/label[1]"
+		}, {
+			"name": "netbankSelector",
+			"type": "Select",
+			"locatorType": "className",
+			"locatorValue": "customSBox ppSelect js-nbp-select"
+		}, {
+			"name": "citrusWallet",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-Citrus_Wallet']/..)/label[1]"
+		}, {
+			"name": "freeChargeWallet",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-FreeCharge']/..)/label[1]"
+		}, {
+			"name": "payUmoneyWallet",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-PayUmoney']/..)/label[1]"
+		}, {
+			"name": "sbiBuddyWallet",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-SBI_Buddy']/..)/label[1]"
+		}, {
+			"name": "emiHDFCBank",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-HDFC_Bank']/..)/label[1]"
+		}, {
+			"name": "emiICICIBank",
+			"type": "Label",
+			"locatorType": "xpath",
+			"locatorValue": "(//input[@id ='ppBankRadio-ICICI_Bank']/..)/label[1]"
+		}, {
+			"name": "payButton",
+			"type": "Button",
+			"locatorType": "id",
+			"locatorValue": "paymentCTA"
+		}, {
+			"name": "3dSecurePaymentTotal",
+			"type": "Button",
+			"locatorType": "xpath",
+			"locatorValue": "//span[@title='INR']"
+		}, {
+			"name": "emiTenure",
+			"type": "radio",
+			"locatorType": "id",
+			"locatorValue": "tenuretoModify"
+		}]
+	}]
+}

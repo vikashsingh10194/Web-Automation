@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ID B2C Train Test Suite" data-provider-thread-count="1" annotations="JDK">
+    <listeners>
+		<listener class-name="com.via.utils.TestNgCustomReport" />
+	</listeners>
+	<test verbose="2" name="Train ID test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="idViaUrl" />
+		<parameter name="dataSheetRowCount" value="4" />
+		<classes>
+			<class name="com.via.testcases.indonesia.TrainsTestCase" />
+		</classes>
+	</test>
+</suite>
+            

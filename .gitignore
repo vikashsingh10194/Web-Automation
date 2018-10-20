@@ -1,0 +1,11 @@
+/bin/
+test-output/
+/target/
+logfile*
+logfile.log
+.classpath
+.project
+.settings/
+hs_err_pid*
+hs_err_pid10450.log
+**/*.DS_Store

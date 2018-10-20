@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AllCountryFlightTestSuite" data-provider-thread-count="1" annotations="JDK">
+    <listeners>
+		<listener class-name="com.via.utils.TestNgCustomReport" />
+	</listeners>
+	<test verbose="2" name="Flights IDB2CDOM test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="idViaUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.indonesia.DomFlightsTestCase"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights IDB2CINTL test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="idViaUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.indonesia.IntlFlightsTestCase"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights IDB2BDOM test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="idB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.indonesia.DomFlightsTestCaseReseller"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights IDB2BINTL test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="idB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.indonesia.IntlFlightsTestCaseReseller"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights PHB2BDOM test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="phB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.philippines.DomFlightsTestCaseReseller"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights PHB2BINTL test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="phB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.philippines.IntlFlightsTestCaseReseller"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights SGB2CINTL test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="sgViaUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.singapore.IntlFlightsTestCase"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights SGB2BINTL test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="sgB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.singapore.IntlFlightsTestCaseReseller"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights THB2CDOM test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="thViaUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.thiland.DomFlightsTestCase"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights THB2CINTL test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="thViaUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.thiland.IntlFlightsTestCase"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights UAEB2CINTL test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="uaeViaUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.uae.IntlFlightsTestCase"/>
+		</classes>
+	</test>
+	<test verbose="2" name="Flights UAEB2BINTL test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="Url" value="uaeB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2"/>
+		<classes>
+			<class name="com.via.testcases.uae.IntlFlightsTestCaseReseller"/>
+		</classes>
+	</test>
+</suite>

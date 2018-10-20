@@ -1,0 +1,771 @@
+{
+	"transactionRuleDetails": [
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Flydubai",
+
+			"priority": "3",
+
+			"transactionFee": "0"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Flydubai",
+
+			"priority": "3",
+
+			"transactionFee": "0"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Flydubai",
+
+			"priority": "3",
+
+			"transactionFee": "0"
+
+		},
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Flydubai",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Flydubai",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Flydubai",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		},
+		
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Air Arabia",
+
+			"priority": "3",
+
+			"transactionFee": "0"
+
+		},
+		
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Air Arabia",
+
+			"priority": "3",
+
+			"transactionFee": "0"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Air Arabia",
+
+			"priority": "3",
+
+			"transactionFee": "0"
+
+		}, {
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Air Arabia",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Air Arabia",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		},
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Air Arabia",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		},
+		
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Flynas",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Flynas",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Flynas",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+		
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Flynas",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Flynas",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Flynas",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+		
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Shaheen Air",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Shaheen Air",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Shaheen Air",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+		
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Shaheen Air",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Shaheen Air",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Shaheen Air",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		}, 
+		
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Air Blue",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Air Blue",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Air Blue",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+		
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Air Blue",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Air Blue",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Air Blue",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+		
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "IndiGo",
+
+			"priority": "3",
+
+			"transactionFee": "0"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "IndiGo",
+
+			"priority": "3",
+
+			"transactionFee": "0"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "IndiGo",
+
+			"priority": "3",
+
+			"transactionFee": "0"
+
+		},
+		
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "IndiGo",
+
+			"priority": "3",
+
+			"transactionFee": "6"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "IndiGo",
+
+			"priority": "3",
+
+			"transactionFee": "6"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "IndiGo",
+
+			"priority": "3",
+
+			"transactionFee": "6"
+
+		},
+		
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "SpiceJet",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "SpiceJet",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "SpiceJet",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		}, 
+		
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "SpiceJet",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "SpiceJet",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "SpiceJet",
+
+			"priority": "3",
+
+			"transactionFee": "5"
+
+		}, 
+		
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Cebu Pacific",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Cebu Pacific",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2B",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Cebu Pacific",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+		
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Adult",
+
+			"airline": "Cebu Pacific",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Child",
+
+			"airline": "Cebu Pacific",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+
+		{
+
+			"media": "B2C",
+
+			"flightType": "International",
+
+			"traveller": "Infant",
+
+			"airline": "Cebu Pacific",
+
+			"priority": "3",
+
+			"transactionFee": "10"
+
+		},
+		
+		{
+			"priority": "1",
+		}
+	]
+}

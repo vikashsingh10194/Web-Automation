@@ -1,0 +1,13 @@
+{
+    "transactionRuleDetails" : [
+     	{
+     		"media":"B2B",
+		    "priority": "3",
+		    "flightType": "International",
+		    "transactionFee": "1"
+     	}, 
+     	{
+     		"priority": "1"
+     	}
+    ]
+}

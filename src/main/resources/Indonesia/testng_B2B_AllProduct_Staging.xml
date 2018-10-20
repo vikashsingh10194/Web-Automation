@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ID B2B Staging All Product Suite"
+	data-provider-thread-count="1" annotations="JDK">
+	<listeners>
+		<listener class-name="com.via.utils.TestNgCustomReport" />
+	</listeners>
+	<test verbose="2" name="IDB2B DOM Flights Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="idStagingB2bUrl" />
+		<parameter name="dataSheetRowCount" value="6" />
+		<classes>
+			<class name="com.via.testcases.indonesia.DomFlightsTestCaseReseller" />
+		</classes>
+	</test>
+	<test verbose="2" name="IDB2B INTL Flights Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="idStagingB2bUrl" />
+		<parameter name="dataSheetRowCount" value="4" />
+		<classes>
+			<class name="com.via.testcases.indonesia.IntlFlightsTestCaseReseller" />
+		</classes>
+	</test>
+	<test verbose="2" name="IDB2B ERecharge Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="idStagingB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2" />
+		<classes>
+			<class name="com.via.testcases.indonesia.ERechargeTestCaseReseller" />
+		</classes>
+	</test>
+	<test verbose="2" name="IDB2B Hotels Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="idStagingB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2" />
+		<classes>
+			<class name="com.via.testcases.indonesia.HotelsTestCaseReseller" />
+		</classes>
+	</test>
+	<test verbose="2" name="IDB2B Holidays Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="idStagingB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2" />
+		<classes>
+			<class name="com.via.testcases.indonesia.HolidaysTestCaseReseller" />
+		</classes>
+	</test>
+	<test verbose="2" name="IDB2B Trains Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="idStagingB2bUrl" />
+		<parameter name="dataSheetRowCount" value="2" />
+		<classes>
+			<class name="com.via.testcases.indonesia.TrainsTestCaseReseller" />
+		</classes>
+	</test>
+</suite>

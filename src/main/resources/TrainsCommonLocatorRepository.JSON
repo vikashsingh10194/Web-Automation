@@ -1,0 +1,583 @@
+{
+   "pages":[
+      {
+         "name":"trainHome",
+         "uiObjects":[
+         	{
+         		"name": "train",
+         		"type": "link",
+         		"locatorType": "xpath",
+         		"locatorValue": "//span[text()='Kereta Api']"
+         	},
+            {
+               "name":"oneWay",
+               "type":"radio",
+               "locatorType":"xpath",
+               "locatorValue":"//label[@for='one-way']"
+            },
+            {
+               "name":"roundTrip",
+               "type":"radio",
+               "locatorType":"xpath",
+               "locatorValue":"//label[@for='round-trip']"
+            },
+            {
+               "name":"kai",
+               "type":"radio",
+               "locatorType":"xpath",
+               "locatorValue":"(//label[@for='apiKAI'])[1]"
+            },
+            {
+               "name":"railink",
+               "type":"radio",
+               "locatorType":"xpath",
+               "locatorValue":"(//label[@for='apiRLink'])[1]"
+            },
+            {
+               "name":"source",
+               "type":"input",
+               "locatorType":"id",
+               "locatorValue":"source"
+            },
+            {
+               "name":"destination",
+               "type":"input",
+               "locatorType":"id",
+               "locatorValue":"destination"
+            },
+            {
+               "name":"autoComplete",
+               "type":"autoSearchBox",
+               "locatorType":"xpath",
+               "locatorValue":"(//ul[@id='dropDownType']//span[@class='name' and contains(translate(text(), 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'),  'cityName')])/ancestor::li[@class='ui-menu-item']"
+            },
+            {
+               "name":"departureDate",
+               "type":"text",
+               "locatorType":"id",
+               "locatorValue":"departure"
+            },
+            {
+               "name":"returnDate",
+               "type":"text",
+               "locatorType":"id",
+               "locatorValue":"return"
+            },
+            {
+               "name":"adultCountMinus",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='counter-element adult']//div[contains(@class, 'minus')]"
+            },
+            {
+               "name":"adultCount",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='counter-element adult']//div[@class='count']"
+            },
+            {
+               "name":"adultCountPlus",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='counter-element adult']//div[contains(@class, 'plus')]"
+            },
+            {
+               "name":"infantCountMinus",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//div[contains(@class, 'counter-element infant')]//div[contains(@class, 'minus')]"
+            },
+            {
+               "name":"infantCount",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[contains(@class, 'counter-element infant')]//div[@class='count']"
+            },
+            {
+               "name":"infantCountPlus",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//div[contains(@class, 'counter-element infant')]//div[contains(@class, 'plus')]"
+            },
+            {
+               "name":"searchTrain",
+               "type":"button",
+               "locatorType":"id",
+               "locatorValue":"search-rail-btn"
+            }
+         ]
+      },
+      {
+         "name":"trainResultHeader",
+         "uiObjects":[
+            {
+               "name":"cityCode",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//span[@class='code']"
+            },
+            {
+               "name":"cityName",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='airpt']"
+            },
+            {
+               "name":"onwardDate",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='dateLabl']/span[@class='dt'][1]"
+            },
+            {
+               "name":"returnDate",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='dateLabl']/span[@class='dt'][2]"
+            },
+            {
+               "name":"paxDetails",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='paxNums']/span[@class='num']"
+            },
+            {
+               "name":"modifyButton",
+               "type":"button",
+               "locatorType":"className",
+               "locatorValue":"labl modify"
+            }
+         ]
+      },
+      {
+         "name":"trainResultContainer",
+         "uiObjects":[
+         	{
+         		"name": "trainCount",
+         		"type": "text",
+         		"locatorType": "xpath",
+         		"locatorValue": "//div[contains(@class, 'resCount')]//span"
+         	},
+         	{
+         		"name": "resultDiv",
+         		"type": "text",
+         		"locatorType": "xpath",
+         		"locatorValue": "(//div[contains(@class, 'journeyResults')]//div[contains(text(), 'trainName')]/ancestor::div[contains(@class, 'js-result available')])//span[contains(text(), 'coachType')]/ancestor::div[contains(@class, 'js-result available')]"
+         	}, 
+         	{
+         		"name": "trainInfo",
+         		"type": "text",
+         		"locatorType": "xpath",
+         		"locatorValue": "(//div[@class='trainInfo'])[count]"
+         	},
+         	{
+         		"name": "trainName",
+         		"type": "text",
+         		"locatorType": "xpath",
+         		"locatorValue": ".//div[contains(@class, 'name')]"
+         	},
+         	{
+         		"name": "class",
+         		"type": "text",
+         		"locatorType": "xpath",
+         		"locatorValue": ".//div[contains(@class, 'cls')]//span"
+         	},
+         	{
+         		"name": "depArrTime",
+         		"type": "text",
+         		"locatorType": "xpath",
+         		"locatorValue": ".//div[@class='timeTab']//div[@class='highLight']"
+         	},
+         	{
+         		"name": "depArrStations",
+         		"type": "text",
+         		"locatorType": "xpath",
+         		"locatorValue": ".//div[@class='timeTab']//span"
+         	}, 
+         	{
+         		"name": "perAdultFare",
+         		"type": "text",
+         		"locatorType": "xpath",
+         		"locatorValue": ".//div[@class='priceCont']"
+         	}, 
+         	{
+         		"name": "selectBtn",
+         		"type": "text",
+         		"locatorType": "xpath",
+         		"locatorValue": ".//button[contains(@class, 'priBtn')]"
+         	}
+         ]
+   	  },
+   	  {
+   	  	"name": "selectionPanel",
+   	  	"uiObjects": [
+   	  		{
+   	  			"name":"selectionDiv",
+               	"type":"text",
+               	"locatorType":"xpath",
+               	"locatorValue":"//div[contains(@class, 'journeyFlight')]"
+   	  		},
+   	  		{
+   	  			"name":"trainName",
+               	"type":"text",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@class='name']"
+   	  		}, 
+   	  		{
+   	  			"name":"coachType",
+               	"type":"text",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@class='fltNum']"
+   	  		},
+   	  		{
+   	  			"name":"coachType",
+               	"type":"text",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@class='fltNum']"
+   	  		}, 
+   	  		{
+   	  			"name":"deptArrTime",
+               	"type":"text",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@class='time']"
+   	  		},
+			{
+   	  			"name":"cityCode",
+               	"type":"text",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@class='airCode']"
+   	  		},   
+   	  		{
+   	  			"name":"fare",
+               	"type":"text",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@class='prCont']"
+   	  		}, 
+   	  		{
+   	  			"name":"totalFare",
+               	"type":"text",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@class='bookContainer']//div[@class='prCont']"
+   	  		}, 
+   	  		{
+   	  			"name":"bookBtn",
+               	"type":"text",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[@id='bookCTA']"
+   	  		}		
+   	  	]
+   	  },
+      {
+      	"name":"travellersHeader",
+         "uiObjects":[
+            {
+               "name":"cityCode",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='city']"
+            },
+            {
+               "name":"journeyDate",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//span[@class='dt']"
+            },
+            {
+               "name":"paxDetails",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='paxNums']"
+            },
+            {
+               "name":"totalFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='currency']"
+            },
+            {
+               "name":"expandFareDetails",
+               "type":"button",
+               "locatorType":"className",
+               "locatorValue":"expand"
+            }
+         ]
+      },
+      {
+      	"name": "journeyDetails",
+      	"uiObjects": [
+      		{
+		      	"name": "journeyDiv",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "(.//div[@class='fltSegment'])[count]"
+		    },
+      		{
+		      	"name": "journeyCity",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//div[@class='frmTo']"
+		    },
+		   	{
+		      	"name": "trainName",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//div[@class='name']"
+		    },
+		    {
+		      	"name": "trainCoach",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//div[contains(@class, 'fltNum')]"
+		    },
+		    {
+		    	"name": "trainTime",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//div[@class='time']"
+		    } 
+		 ] 
+      },
+      {
+      	"name": "travellersDetails",
+      	"uiObjects": [
+      		{
+		      	"name": "travellersExpandBtn",
+		      	"type": "button",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//div[@id='traveller']/p"
+		    },
+		   	{
+		      	"name": "travellerName",
+		      	"type": "input",
+		      	"locatorType": "id",
+		      	"locatorValue": "travellerName"
+		    },
+		    {
+		    	"name": "travellerMobNo",
+		      	"type": "input",
+		      	"locatorType": "id",
+		      	"locatorValue": "travellerMobileNo"
+		    },
+		    {
+		    	"name": "travellerIdType",
+		      	"type": "input",
+		      	"locatorType": "id",
+		      	"locatorValue": "travellerIdType"
+		    },
+		    {
+		    	"name": "travellerIdNo",
+		      	"type": "input",
+		      	"locatorType": "id",
+		      	"locatorValue": "travellerIDNo"
+		    },
+		    {
+		    	"name": "travellerDOBday",
+		      	"type": "input",
+		      	"locatorType": "id",
+		      	"locatorValue": "travellerDOBday"
+		    }, 
+		    {
+		    	"name": "travellerDOBMonth",
+		      	"type": "input",
+		      	"locatorType": "id",
+		      	"locatorValue": "travellerDOBmonth"
+		    },
+		    {
+		    	"name": "travellerDOBYear",
+		      	"type": "input",
+		      	"locatorType": "id",
+		      	"locatorValue": "travellerDOByear"
+		    },
+		    {
+		    	"name": "splitBookingYes",
+		      	"type": "radio",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "(//label[@for='isSplitYes'])[1]"
+		    }, 
+		    {
+		    	"name": "splitBookingNo",
+		      	"type": "radio",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "(//label[@for='isSplitNo'])[1]"
+		    }, 
+			{
+		    	"name": "autoAllocation",
+		      	"type": "radio",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "//label[@for='autoAllotYes']"
+		    }, 
+			{
+		    	"name": "manualAllocation",
+		      	"type": "radio",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "//label[@for='autoAllotNo']"
+		    },
+			{
+		    	"name": "seatSelection",
+		      	"type": "button",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "//button[contains(@class, 'jsSeatBtn')]"
+		    },		    
+		    {
+		    	"name": "fareDetails",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "(//div[contains(@class, 'blk seatMap')]//div[@class='mtabRow']//div[contains(@class, 'mtabCell')])"
+		    },
+		    {
+		    	"name": "ISDCode",
+		      	"type": "select",
+		      	"locatorType": "id",
+		      	"locatorValue": "ISDCodeTr"
+		    },
+		    {
+		    	"name": "contactNo",
+		      	"type": "input",
+		      	"locatorType": "id",
+		      	"locatorValue": "contactMobile"
+		    },
+		    {
+		    	"name": "contactEmail",
+		      	"type": "input",
+		      	"locatorType": "id",
+		      	"locatorValue": "contactEmail"
+		    },
+		    {
+		    	"name": "termsCheckBox",
+		      	"type": "radio",
+		      	"locatorType": "id",
+		      	"locatorValue": "read_terms_label"
+		    },
+		    {
+		    	"name": "makePayment",
+		      	"type": "button",
+		      	"locatorType": "id",
+		      	"locatorValue": "makePayCTA"
+		    }
+		 ] 
+      },
+      {
+      	"name": "seatSelectionPanel",
+      	"uiObjects": [
+      		{
+		    	"name": "seatMapPanel",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "//div[@id='journeySeatMap']"
+		    },
+      		{
+		    	"name": "cityCode",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//div[@class='fromTo']"
+		    },
+		    {
+		    	"name": "date",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//div[@class='dates']"
+		    },
+		    {
+		    	"name": "time",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//div[@class='times']//span"
+		    }, 
+		    {
+		    	"name": "trainInfo",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//div[@class='trainInfo']//b"
+		    }, 
+		    {
+		    	"name": "paxInfo",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//div[@class='paxInfo']/b"
+		    }, 
+		    {
+		    	"name": "coachButton",
+		      	"type": "button",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//span[@id='journeyWagonLabels']//button"
+		    },
+		    {
+		    	"name": "availableSeats",
+		      	"type": "button",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "(.//div[@class='wagonBox'])[count]//div[contains(@class, 'jsSeat ')]"
+		    }, 
+		    {
+		    	"name": "proceedSeatBtn",
+		      	"type": "button",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//button[contains(@class, 'proceedSeatBtn')]"
+		    },
+		    {
+		    	"name": "selectedSeat",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "//div[contains(@class, 'seatsDiv')]//div"
+		    } 
+      	]
+      },
+      {
+      	"name": "confirmationPanel",
+      	"uiObjects": [
+      		{
+      			"name": "travellerDetails",
+      			"type": "text",
+      			"locatorType": "xpath",
+      			"locatorValue": "(//div[@id='confirmDetailContainer']//div[contains(@class, 'jsDetails')])"
+      		},
+      		{
+		    	"name": "seatDetails",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": "//div[@id='confirmDetailContainer']//div[contains(@class, 'jsSeats')]"
+		    },
+      		{
+      			"name": "travellerName",
+      			"type": "text",
+      			"locatorType": "xpath",
+      			"locatorValue": "//div[@id='confirmDetailContainer']//div[contains(@class, 'jsName')]"
+      		},
+      		{
+      			"name": "travellerType",
+      			"type": "text",
+      			"locatorType": "xpath",
+      			"locatorValue": ".//div[@class='js-type']"
+      		},
+      		{
+		    	"name": "detailsKey",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//span[@class='js-key']"
+		    },
+		    {
+		    	"name": "detailsValue",
+		      	"type": "text",
+		      	"locatorType": "xpath",
+		      	"locatorValue": ".//span[contains(@class, 'js-value')]"
+		    },
+		    {
+		    	"name": "contactNo",
+		      	"type": "text",
+		      	"locatorType": "id",
+		      	"locatorValue": "confirmContactPhone"
+		    },
+		    {
+		    	"name": "contactEmail",
+		      	"type": "text",
+		      	"locatorType": "id",
+		      	"locatorValue": "confirmContactEmail"
+		    },
+		    {
+		    	"name": "confirmPaymentBtn",
+		      	"type": "text",
+		      	"locatorType": "id",
+		      	"locatorValue": "confirmProceedPayBtn"
+		    }
+      	]
+      }
+   ]
+}

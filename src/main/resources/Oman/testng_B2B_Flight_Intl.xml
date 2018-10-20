@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OMAN B2B INTL Flight Test Suite"
+	data-provider-thread-count="1" annotations="JDK">
+	<listeners>
+		<listener class-name="com.via.utils.TestNgCustomReport" />
+	</listeners>
+	<test verbose="2" name="OMAN INTL Flights Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="omB2bUrl" />
+		<parameter name="dataSheetRowCount" value="8" />
+		<classes>
+			<class name="com.via.testcases.oman.IntlFlightsTestCaseReseller">
+				<methods>
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

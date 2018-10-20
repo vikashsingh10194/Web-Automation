@@ -1,0 +1,58 @@
+{
+	"pages": [
+		{
+			"name": "corpLogin",
+			"uiObjects": [
+				{
+					"name": "login",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//*[@id='header']//a[@href='#/login']"
+				},
+				{
+					"name": "emailId",
+					"type": "input",
+					"locatorType": "xpath",
+					"locatorValue": "//*[@id='login']//input[@type='email']"
+				},
+				{
+					"name": "password",
+					"type": "input",
+					"locatorType": "xpath",
+					"locatorValue": "//*[@id='login']//input[@type='password']"
+				},
+				{
+					"name": "signIn",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//*[@id='login']/main//button"
+				},
+				{
+					"name": "deskUser",
+					"type": "input",
+					"locatorType": "xpath",
+					"locatorValue": "//*[@id='deskUser']/input"
+				},
+				{
+					"name": "deskUserLink",
+					"type": "link",
+					"locatorType": "xpath",
+					"locatorValue": "//*[@id='login']/main/div/form/div[3]/a"
+				},
+				{
+					"name": "errorMessage",
+					"type": "link",
+					"locatorType": "xpath",
+					"locatorValue": "//*[@id='header']//div[@class='error-messages']"
+				},
+				{
+					"name": "logOut",
+					"type": "button",
+					"locatorType": "xpath",
+					"locatorValue": "//span[text()='Logout']"
+				}
+			]
+		}
+	]
+}
+				

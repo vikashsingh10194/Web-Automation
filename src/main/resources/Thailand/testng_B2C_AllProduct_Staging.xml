@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TH Staging All Product Test Suite"
+	data-provider-thread-count="1" annotations="JDK">
+	<listeners>
+		<listener class-name="com.via.utils.TestNgCustomReport" />
+	</listeners>
+	<test verbose="2" name="THB2C DOM Flight Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="thStagingViaUrl" />
+		<parameter name="dataSheetRowCount" value="8" />
+		<classes>
+			<class name="com.via.testcases.thiland.DomFlightsTestCase" />
+		</classes>
+	</test>
+	<test verbose="2" name="THB2C INTL Flight Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="thStagingViaUrl" />
+		<parameter name="dataSheetRowCount" value="8" />
+		<classes>
+			<class name="com.via.testcases.thiland.IntlFlightsTestCase" />
+		</classes>
+	</test>
+	<test verbose="2" name="THB2C Hotel Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="Url" value="thStagingViaUrl" />
+		<parameter name="dataSheetRowCount" value="4" />
+		<classes>
+			<class name="com.via.testcases.thiland.HotelsTestCase" />
+		</classes>
+	</test>
+</suite>

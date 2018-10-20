@@ -1,0 +1,478 @@
+{
+   "pages":[
+      {
+         "name":"flightResultContainer",
+         "uiObjects":[
+            {
+               "name":"onwardPreviousDay",
+               "type":"link",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='onwardResults']//a[@class='via_prev_day']"
+            },
+            {
+               "name":"onwardNextDay",
+               "type":"link",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='onwardResults']//a[@class='via_next_day']"
+            },
+            {
+               "name":"returnPreviousDay",
+               "type":"link",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='onwardResults']//a[@class='via_prev_day']"
+            },
+            {
+               "name":"returnNextDay",
+               "type":"link",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='onwardResults']//a[@class='via_next_day']"
+            },
+            {
+               "name":"sortOnwardResultButton",
+               "type":"dropdown",
+               "locatorType":"className",
+               "locatorValue":"setSort setSortOnward"
+            },
+            {
+               "name":"sortReturnResultButton",
+               "type":"dropdown",
+               "locatorType":"className",
+               "locatorValue":"setSort setSortReturn"
+            },
+            {
+               "name":"select",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//button[@class='bookCTA']"
+            },
+            {
+               "name":"resultDiv",
+               "type":"div",
+               "locatorType":"xpath",
+               "locatorValue":"(((//div[@class='flightResults']//child::img[@alt='flightName'])[flightNo])/ancestor::div[@class='result noMsg'])"
+            },
+            {
+               "name":"flightNo",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltNum']"
+            },
+            {
+               "name":"flightName",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='name js-toolTip']"
+            },
+            {
+               "name":"departTime",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='depTime']/div[@class='time']"
+            },
+            {
+               "name":"departCity",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='depTime']/div[@class='city']"
+            },
+            {
+               "name":"arrivalTime",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='arrTime']/div[@class='time']"
+            },
+            {
+               "name":"arrivalCity",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='arrTime']/div[@class='city']"
+            },
+            {
+               "name":"duration",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDur']/div[@class='dur']"
+            },
+            {
+               "name":"stops",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDur']//div[@class='stops']"
+            },
+            {
+               "name":"fare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[contains(@class, 'prCont')]//span[@class='colCont']"
+            },
+            {
+               "name":"route",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='route js-toolTip']"
+            },
+            { 
+           		"name":"flightDetailsMenu",
+               	"type":"text",
+               	"locatorType":"xpath",
+               	"locatorValue":".//div[contains(@class, 'fltDetTab')]"
+            
+            },
+            {
+               "name":"baggage",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//li[contains(@class,'bagInfo')]"
+            },
+            {
+               "name":"flightDetails",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//li[@class='flightDetails']"
+            },
+            {
+               "name":"fareRules",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//li[@class='fare-rules']"
+            },
+            {
+               "name":"fareDetails",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//li[@class='fareDetails']"
+            },
+            {
+               "name":"baggageFromToDeatils",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='bagInfoDiv det-div']//span[@class='frmTo']"
+            },
+            {
+               "name":"baggageFlightNo",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='bagInfoDiv det-div']//div[@class='airlineFltNo']"
+            },
+            {
+               "name":"baggageAirLineName",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='bagInfoDiv det-div']//div[@class='airlineName js-toolTip']"
+            },
+            {
+            	"name": "checkInBaggage",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[@class='bagCheckInInfo']"
+            },
+            {
+            	"name": "cabinBaggage",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[@class='bagCabinInfo']"
+            },
+            {
+               "name":"adultCheckInBaggage",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='bagInfoDiv det-div']//div[@class='adultBaggage']//span[@class='dark']"
+            },
+            {
+               "name":"adultCabinBaggage",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='bagInfoDiv det-div']//div[@class='adultCabinBaggage']//span[@class='dark']"
+            },
+            {
+               "name":"childCheckInBaggage",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='bagInfoDiv det-div']//div[@class='childBaggage']//span[@class='dark']"
+            },
+            {
+               "name":"childCabinBaggage",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='bagInfoDiv det-div']//div[@class='childCabinBaggage']//span[@class='dark']"
+            },
+            {
+               "name":"flightFromToDetails",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//span[@class='frmTo']"
+            },
+            {
+               "name":"flightDepartDate",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//span[@class='depDate']"
+            },
+            {
+               "name":"flightStops",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//span[@class='stops']"
+            },
+            {
+               "name":"flightNameFromFlightDetails",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//div[@class='name']"
+            },
+            {
+               "name":"flightNoFromFlightDetails",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//div[@class='fltNum']"
+            },
+            {
+               "name":"flightDurationFromFlightDetails",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//div[@class='segTime']"
+            },
+            {
+               "name":"flightLayOverFromFlightDetails",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//div[@class='layover']//span[@class='time']"
+            },
+            {
+               "name":"flightDepartAirPortCode",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//div[@class='from']//span[@class='airport']"
+            },
+            {
+               "name":"flightDepartAirPortName",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//div[@class='from']//span[@class='city']"
+            },
+            {
+            	"name": "flightDepartCountry",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//li[contains(@class, 'country')]"
+            },
+            {
+            	"name": "flightArrivalCountry",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='to']//li[contains(@class, 'country')]"
+            },
+            {
+            	"name": "flightDepartTerminal",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//li[contains(@class, 'terminal')]"
+            },
+            {
+            	"name": "flightDepartTime",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//li[@class='departTime']"
+            },
+            {
+            	"name": "flightDepartDate",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='from']//li[@class='jDate']"
+            },
+            {
+            	"name": "flightArrivalTerminal",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='to']//li[contains(@class, 'terminal')]"
+            },
+            {
+            	"name": "flightArrivalTime",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='to']//li[@class='departTime']"
+            },
+            {
+            	"name": "flightArrivalDate",
+            	"type": "text",
+            	"locatorType": "xpath",
+            	"locatorValue": ".//div[contains(@class, 'fltDetDiv')]//div[@class='to']//li[@class='jDate']"
+            },
+            {
+               "name":"flightArrivalAirPortCode",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//div[@class='to']//span[@class='airport']"
+            },
+            {
+               "name":"flightArrivalAirPortName",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//div[@class='to']//span[@class='city']"
+            },
+            {
+               "name":"flightArrivalCountry",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltDetDiv det-div']//div[@class='to']//li[@class='country']"
+            },
+            {
+               "name":"fareTab",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareRulesDiv det-div']//li[contains(@class, fareRulesTab)]"
+            },
+            {
+               "name":"flightFareRefundable",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareRulesDiv det-div']//div[contains(@class, 'u_floatR')]"
+            },
+            {
+               "name":"adultFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='adultFare']/div[@class='fare']"
+            },
+            {
+               "name":"adultTotalFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='adultFare']/div[@class='total']"
+            },
+            {
+               "name":"childFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='childFare']/div[@class='fare']"
+            },
+            {
+               "name":"childTotalFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='childFare']/div[@class='total']"
+            },
+            {
+               "name":"infantFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='infantFare']/div[@class='fare']"
+            },
+            {
+               "name":"infantTotalFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='infantFare']/div[@class='total']"
+            },
+            {
+               "name":"otherFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='otherFares']/div[@class='fare']"
+            },
+            {
+               "name":"otherFareType",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='otherFares']/div[@class='type']"
+            },
+            {
+               "name":"totalOtherFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='otherFares']/div[@class='total']"
+            },
+            {
+               "name":"totalFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fareDetDiv det-div']/div[@class='totalFare']//span[@class='totalFare']"
+            },
+            {
+               "name":"selectedFlightDiv",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='bookPanel']//div[@class='flightType']"
+            },
+            {
+               "name":"selectedFlightName",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='name js-toolTip']"
+            },
+            {
+               "name":"selectedFlightCode",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='fltNum']"
+            },
+            {
+               "name":"selectedFlightDepartTime",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='depTime']/div[@class='time']"
+            },
+            {
+               "name":"selectedFlightDepartCity",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='depTime']/div[@class='airCode']"
+            },
+            {
+               "name":"selectedFlightArrivalTime",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='arrTime']/div[@class='time']"
+            },
+            {
+               "name":"selectedFlightArrivalCity",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='arrTime']/div[@class='airCode']"
+            },
+            {
+               "name":"selectedFlightFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":".//div[@class='prCont']"
+            },
+            {
+               "name":"grandTotalFare",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='bookPanel']//div[@class='bookContainer']//span[@class='colCont']"
+            },
+            {
+               "name":"bookFlights",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='bookPanel']//div[@class='bookContainer']//div[@class='bookCTA return']"
+            },
+            {
+               "name":"totalFlightCount",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"(//div[@class='resCount']//span)"
+            },
+            {
+               "name":"flightResultsDiv",
+               "type":"div",
+               "locatorType":"xpath",
+               "locatorValue":"(//div[@class='result noMsg'])[count]"
+            },
+            {
+               "name":"airlines",
+               "type":"div",
+               "locatorType":"xpath",
+               "locatorValue":"(//div[@class='flightResults']//child::img[@alt='flightName'])[1]"
+            },
+            {
+               "name":"endPageMarker",
+               "type":"text",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@class='inBlk countryLinks u_width28']"
+            }
+         ]
+      }
+   ]
+}

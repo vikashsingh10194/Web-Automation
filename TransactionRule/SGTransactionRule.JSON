@@ -1,0 +1,174 @@
+{
+    "transactionRuleDetails" : [
+     	{
+     		"airline":"Tiger Airways",
+		    "priority": "3",
+		    "transactionFee": "3"
+     	},
+     	{
+     		"airline":"Scoot Airline",
+		    "priority": "3",
+		    "transactionFee": "3"
+     	},
+     	{
+     		"airline":"Scoot Airline",
+		    "sector": "SIN-MAA",
+		    "media": "B2C",
+		    "priority": "5",
+		    "transactionFee": "5"
+     	},
+     	{
+     		"airline":"Scoot Airline",
+		    "sector": "MAA-SIN",
+		    "media": "B2C",
+		    "priority": "5",
+		    "transactionFee": "5"
+     	},
+     	{
+     		"airline":"Scoot Airline",
+     		"media": "B2C",
+		    "sector": "SIN-DMK",
+		    "priority": "5",
+		    "transactionFee": "4"
+     	},
+     	{
+     		"airline":"Scoot Airline",
+     		"media": "B2C",
+		    "sector": "DMK-SIN",
+		    "priority": "5",
+		    "transactionFee": "4"
+     	},
+     	{
+     		"airline":"AirAsia Indonesia Airways",
+		    "priority": "3",
+		    "transactionFee": "3"
+     	},
+     	{
+     		"airline":"AirAsia Airways",
+		    "priority": "3",
+		    "transactionFee": "3"
+     	},
+     	{
+     		"airline":"Malindo Air",
+     		"media": "B2C",
+		    "priority": "4",
+		    "transactionFee": "0.01"
+     	},
+     	{
+     		"airline":"Malindo Air",
+     		"media": "B2B",
+		    "priority": "4",
+		    "transactionFee": "3"
+     	},
+     	{
+     		"airline":"Thai Lion Air",
+     		"media": "B2C",
+		    "priority": "4",
+		    "transactionFee": "1.75",
+		    "discount": "7%"
+     	},
+     	{
+     		"airline":"Thai Lion Air",
+     		"media": "B2B",
+		    "priority": "4",
+		    "transactionFee": "3",
+		    "discount": "7%"
+     	},
+     	{
+     		"airline":"Indigo",
+		    "priority": "3",
+		    "transactionFee": "3",
+     	},
+     	{
+     		"airline":"Cathay Pacific",
+     		"media": "B2C",
+		    "priority": "4",
+		    "discount": "3"
+     	},
+     	{
+     		"airline":"Cathay Pacific",
+     		"media": "B2C",
+     		"sector": "SIN-HKG",
+		    "priority": "5",
+		    "discount": "3.75"
+     	},
+     	{
+     		"airline":"Cathay Pacific",
+     		"media": "B2C",
+     		"sector": "HKG-SIN",
+		    "priority": "5",
+		    "discount": "3.75"
+     	},
+     	{
+     		"airline":"Malaysia Airlines",
+     		"media": "B2C",
+		    "priority": "4",
+		    "discount": "3.5"
+     	},
+     	{
+     		"airline":"Malaysia Airlines",
+     		"media": "B2C",
+     		"sector": "SIN-KUL",
+		    "priority": "5",
+		    "discount": "3"
+     	},
+     	{
+     		"airline":"Malaysia Airlines",
+     		"media": "B2C",
+     		"sector": "KUL-SIN",
+		    "priority": "5",
+		    "discount": "3"
+     	},
+     	{
+     		"airline":"Singapore Airlines",
+     		"media": "B2C",
+		    "priority": "4",
+		    "discount": "3.75"
+     	},
+     	{
+     		"airline":"Garuda Indonesia",
+     		"media": "B2C",
+		    "priority": "4",
+		    "discount": "2.75"
+     	},
+     	{
+     		"airline":"JetAirways",
+     		"media": "B2C",
+		    "priority": "4",
+		    "discount": "3"
+     	},
+     	{
+     		"airline":"Silk Air",
+     		"media": "B2C",
+		    "priority": "4",
+		    "discount": "3.75"
+     	},
+     	{
+     		"airline":"Vietnam Airlines",
+     		"media": "B2C",
+		    "priority": "4",
+		    "discount": "2.5"
+     	},
+     	{
+     		"airline":"Philippine Airlines",
+     		"media": "B2C",
+		    "priority": "4",
+		    "discount": "2.25"
+     	},
+     	{
+     		"airline":"KLM",
+     		"media": "B2C",
+		    "priority": "4",
+		    "discount": "3"
+     	},
+     	{
+     		"airline":"Jetstar Asia",
+     		"media": "B2B",
+		    "priority": "4",
+		    "transactionFee": "3"
+     	},
+     	{
+		    "priority": "1"
+     	}
+    ]
+}

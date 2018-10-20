@@ -1,0 +1,33 @@
+{
+    "transactionRuleDetails" : [
+     	{
+     		"airline":"Tiger Airways",
+		    "priority": "3",
+		    "transactionFee": "30"
+     	},
+     	{
+     		"airline":"Scoot Airline",
+		    "priority": "3",
+		    "transactionFee": "50"
+     	},
+     	{
+     		"airline":"AirAsia Airways",
+		    "priority": "3",
+		    "transactionFee": "50"
+     	},
+     	{
+     		"airline":"Thai Lion Air",
+		    "priority": "3",
+		    "transactionFee": "30",
+		    "discount": "11%"
+     	},
+     	{
+     		"airline":"AirAsia Thai Airways",
+		    "priority": "3",
+		    "transactionFee": "50"
+     	},
+     	{
+		    "priority": "1"
+     	}
+    ]
+}

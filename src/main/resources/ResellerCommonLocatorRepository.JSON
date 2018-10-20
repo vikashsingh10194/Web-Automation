@@ -1,0 +1,72 @@
+ {
+ 	"pages": [{
+ 		"name": "agentLogin",
+ 		"uiObjects": [{
+ 			"name": "userType_Old",
+ 			"type": "options",
+ 			"locatorType": "xpath",
+ 			"locatorValue": "//select[@id='userTypeSelect']"
+ 		}, {
+ 			"name": "userType_New",
+ 			"type": "options",
+ 			"locatorType": "xpath",
+ 			"locatorValue": "//select[@id='roleDropdown']"
+ 		},{
+ 			"name": "loginButton_Old",
+ 			"type": "options",
+ 			"locatorType": "id",
+ 			"locatorValue": "loginPanelBlock"
+ 		},{
+ 			"name": "loginId_Old",
+ 			"type": "input",
+ 			"locatorType": "name",
+ 			"locatorValue": "userId"
+ 		}, {
+ 			"name": "loginId_New",
+ 			"type": "input",
+ 			"locatorType": "id",
+ 			"locatorValue": "loginIdText"
+ 		}, {
+ 			"name": "password_Old",
+ 			"type": "input",
+ 			"locatorType": "name",
+ 			"locatorValue": "password"
+ 		},{
+ 			"name": "password_New",
+ 			"type": "input",
+ 			"locatorType": "id",
+ 			"locatorValue": "passwordText"
+ 		}, {
+ 			"name": "deskId_Old",
+ 			"type": "input",
+ 			"locatorType": "name",
+ 			"locatorValue": "deskId"
+ 		}, {
+ 			"name": "deskId_New",
+ 			"type": "input",
+ 			"locatorType": "id",
+ 			"locatorValue": "deskIdText"
+ 		},{
+ 			"name": "signIn_Old",
+ 			"type": "button",
+ 			"locatorType": "xpath",
+ 			"locatorValue": "(//button[@class='btn btn-default'][@type='submit'])[1]"
+ 		},
+ 		{
+ 			"name": "signIn_New",
+ 			"type": "button",
+ 			"locatorType": "xpath",
+ 			"locatorValue": "//input[@id='loginValidate']"
+ 		}, {
+ 			"name": "errorMsg",
+ 			"type": "text",
+ 			"locatorType": "xpath",
+ 			"locatorValue": "//div[@class='error-messages']"
+ 		}, {
+ 			"name": "logOut",
+ 			"type": "button",
+ 			"locatorType": "xpath",
+ 			"locatorValue": "//div[@class='logout hideFromCustomer']"
+ 		}]
+ 	}]
+ }
